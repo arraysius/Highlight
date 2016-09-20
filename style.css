@@ -1,0 +1,40 @@
+body {
+	font-family: 'Product Sans', Arial, sans-serif;
+}
+
+#header,
+#header:visited {
+	text-decoration: none !important;
+	color: black;
+}
+
+#header:active {
+	color: red;
+}
+
+#header:hover {
+	color: red;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	-ms-transition: color 0.3s linear;
+	transition: color 0.3s linear;
+}
+
+.red {
+	color: red;
+}
+
+form,
+#message,
+#keywords {
+	font-size: 1.1em;
+}
+
+#message {
+	resize: vertical;
+}
+
+#githubrepo {
+	margin-top: 2em;
+}
