@@ -55,7 +55,7 @@
 				<?php
 			} else {
 				$data = explode(";", $_GET["data"]);
-				$text = htmlspecialchars(base64_decode($data[0]));
+				$text = htmlspecialchars(trim(base64_decode($data[0])));
 				$keywords = explode(",", base64_decode($data[1]));
 				foreach ($keywords as $keyword) {
 					$text = str_replace(htmlspecialchars(trim($keyword)),
@@ -64,7 +64,7 @@
 				?>
 				<!-- Message -->
 				<div class="jumbotron text-center">
-					<h3><?= $text ?></span></h3>
+					<h3><?= $text ?></h3>
 				</div>
 				<?php
 			}
